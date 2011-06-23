@@ -27,14 +27,19 @@ Pre-requisite: Python >= v2.5
 
 ~~~~~ HOW TO USE ~~~~~
 
+goto Dashboard of your GoogleAppEngine APP,
+under link 'Permission' from Right-Menu-Column
+the URL-Box link would look like: 
+https://appengine.google.com/permissions?app_id=s%7E$GAE_APPLICATION_NAME
+
+now, invite all those user's by providing their
+e-mail ID and changing their role to 'Viewer' 
+
 #git clone git://github.com/abhishekkr/gae-private-web.git
 
 #cd gae-private-web
 
 #python private_flat.py $GAE_APPLICATION_NAME
-
-now, add all allowed GMail IDs to $GAE_APPLICATION_NAME/allowed.yaml
-with one GMail ID per line (without any space before/after the text)
 
 #cp -r $MY_STATIC_CONTENT_DIR/* $GAE_APPLICATION_NAME/flat_web/
 
