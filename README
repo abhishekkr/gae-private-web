@@ -1,0 +1,54 @@
+gae-private-web
+
+[	 ]
+[ W.I.P. ]
+[	 ]
+
+Gogle AppEngine is providing free {of charge and ads} PaaS to host your own website.
+
+a quick setup for creating a Static Website like 'gae-flat-web'
+
+but unlike 'gae-private-web', it's RESTRICTED only to allowed GMail Users... 
+
+kin'of web portal you just want to share with your friends... FACE-UN-BOOK
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Here,
+I'll be also adding facilities to add PRIVATE
+> Image Albums			[todo]
+> Audio Playlists		[todo]
+> Video Playlists		[todo]
+> Text Document Libraries	[todo]
+> Directory Listings		[todo]
+with auto-generated {customizable} Web UI
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Pre-requisite: Python >= v2.5
+
+~~~~~ HOW TO USE ~~~~~
+
+#git clone git://github.com/abhishekkr/gae-private-web.git
+
+#cd gae-private-web
+
+#python private_flat.py $GAE_APPLICATION_NAME
+
+now, add all allowed GMail IDs to $GAE_APPLICATION_NAME/allowed.yaml
+with one GMail ID per line (without any space before/after the text)
+
+#cp -r $MY_STATIC_CONTENT_DIR/* $GAE_APPLICATION_NAME/flat_web/
+
+now, you can update the created dir $GAE_APPLICATION_NAME to AppEngine,
+by executing following command from downloaded AppEngine's Python SDK
+
+#python appcfg.py update $PATH_TO{$GAE_APPLICATION_NAME}
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+AbhishekKr ~ ABK ~ aBionic
+
+http://www.twitter.com/aBionic
+
+http://github.com/abhishekkr
+
+http://abhishekkr.wordpress.com
